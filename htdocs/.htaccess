@@ -1,0 +1,19 @@
+#AddDefaultCharset utf-8
+#Options -Indexes +FollowSymLinks
+#Options FollowSymLinks
+Allow from all 
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 1 month"
+</IfModule>
+
+RewriteEngine On
+RewriteBase /
+
+#redirect to image preprocessor...
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteRule (.*) index.php [L,QSA]
+

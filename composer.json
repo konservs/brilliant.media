@@ -1,0 +1,30 @@
+{
+	"name": "konservs/brilliant.media",
+	"description": "Media library, components and set of scripts for distributed media storage and resizing",
+	"version": "1.0.0",
+	"type": "library",
+	"keywords": ["media", "brilliant"],
+	"homepage": "https://github.com/konservs/brilliant.media",
+	"license": "MIT",
+	"minimum-stability": "dev",
+	"authors": [
+		{
+		"name": "Andrii Biriev",
+		"email": "andrii.biriev@gmail.com",
+		"homepage": "https://konservs.com",
+		"role": "Developer"
+		}
+	],
+	"support": {
+		"email": "andrii.biriev@gmail.com"
+	},
+	"require": {
+		"konservs/brilliant.framework": "*",
+		"robmorgan/phinx": "0.10"
+	},
+	"autoload": {
+		"psr-4": {
+			"Brilliant\\Media\\": "libraries/Media"
+		}
+	}
+}
