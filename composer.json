@@ -25,6 +25,11 @@
 	"autoload": {
 		"psr-4": {
 			"Brilliant\\Media\\": "libraries/Media"
+		},
+	"scripts": {
+		"dbmigrate": [
+			"vendor/bin/phinx migrate"
+			]
 		}
 	}
 }
